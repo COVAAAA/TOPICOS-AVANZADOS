@@ -1,0 +1,22 @@
+package ejemplooswing;
+
+import javax.swing.*;
+
+public class EJEMPLOOSWING extends JFrame {
+
+    private JLabel label1;
+
+    public EJEMPLOOSWING() {
+        setLayout(null);
+        label1 = new JLabel("Mauricio Garcia Covarrubias");
+        label1.setBounds(10, 20, 200, 300);     // x y ancho altura
+        add(label1);
+    }
+
+    public static void main(String[] ar) {
+        EJEMPLOOSWING formulario1 = new EJEMPLOOSWING(); 
+        formulario1.setBounds(10, 10, 400, 300);
+        formulario1.setVisible(true);
+        formulario1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
